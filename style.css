@@ -21,5 +21,67 @@ body {
 
 .container {
     height: 100vh;
-    background: linear-gradient(to bottom, #1c33b4, #0804de);
+    background: linear-gradient(to bottom, #010c49, #0805be);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5em;
+    color: #fff;
+    position: absolute;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: -130px;
+    left: -130px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-left: 10px solid #fff;
+    transform: rotate(-30deg);
+}
+
+.masjid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 400px;
+    background-image: url(./masjid.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.star {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #fff,
+        0 0 80px #fff;
+    animation: animate linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

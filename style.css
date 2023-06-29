@@ -1,0 +1,25 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+.container {
+    height: 100vh;
+    background: linear-gradient(to bottom, #1c33b4, #0804de);
+}
